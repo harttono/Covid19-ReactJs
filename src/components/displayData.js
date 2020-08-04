@@ -16,20 +16,20 @@ function DisplayData(props) {
                       <p>{item.name}</p>
                       <img src={item.flag} alt="country"/>
                    </div>
-                      <ul>
-                         <li>
-                            <div>
-                                <div>Capital</div>
-                                <div>Region</div>
-                                <div>Population</div>
+                    <ul>
+                       <li>
+                          <div>
+                              <div>Capital</div>
+                              <div>Region</div>
+                              <div>Population</div>
                             </div>
                             <div>
-                                <div>{item.capital}</div>
-                                <div>{item.region}</div>
-                                <div>{numberWithCommas(item.population)}</div>
-                            </div>
-                         </li>
-                      </ul>
+                              <div>{item.capital}</div>
+                              <div>{item.region}</div>
+                              <div>{numberWithCommas(item.population)}</div>
+                          </div>
+                        </li>
+                    </ul>
                 </div>
                 )}
                 <div className="list-data-cases">
