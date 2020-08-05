@@ -36,27 +36,27 @@ function DisplayData(props) {
                {loading ? <p className="loading"><Loading/></p> : error ?  <p>{error}</p> : !success  || country.length === 0 ?  <p style={noticeStyle}>No Data Available</p>:
                 country.map(item => 
                   <ul key={item.id}>
-                      <li><h3>Cases : {numberWithCommas(item.cases.total)}</h3></li>
+                      <li><h3>Cases : <b>{numberWithCommas(item.cases.total)}</b></h3></li>
                       <li>
                         <div>
                               <i class="fas fa-users fa-4x box orange-box"></i>
                               <div>
                                   <div>Confirmed </div>
-                                  <div>{numberWithCommas(item.cases.active)}</div>
+                                  <div className="data-value"><b>{numberWithCommas(item.cases.active)}</b></div>
                               </div>
                         </div>
                         <div>
                             <i class="fas fa-smile fa-4x box green-box"></i>
                             <div>
                               <div>Recovered</div>
-                              <div>{numberWithCommas(item.cases.recovered)}</div>
+                              <div className="data-value"><b>{numberWithCommas(item.cases.recovered)}</b></div>
                             </div>
                         </div>
                         <div>
                           <i class="fas fa-ambulance fa-4x box red-box"></i>
                           <div>
                             <div>Deaths</div>
-                            <div>{numberWithCommas(item.deaths.total)}</div>
+                            <div className="data-value"><b>{numberWithCommas(item.deaths.total)}</b></div>
                           </div>
                         </div>
                       </li>

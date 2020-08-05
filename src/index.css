@@ -257,6 +257,13 @@ body{
     justify-content:space-around;
     flex-wrap: wrap;
   }
+  .list-data-cases > ul > li:nth-child(2) > div > div >.data-value{
+   margin:10px 0;
+  }
+  .list-data-cases > ul > li:nth-child(2) > div > div > div{
+    margin-top:10px;
+    text-transform:uppercase;
+  }
   .list-data-cases > ul > li > div {
     display:flex;
     justify-content:space-evenly;
